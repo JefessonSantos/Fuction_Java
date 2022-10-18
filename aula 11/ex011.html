@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Sua nacionalidade</h1>
+
+    Nacionalidade: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verficar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        var país ='Brasil'
+        console.log(`Vivendo em ${país}`)
+        if (país == 'Brasileiro') {
+            console.log(`Você é Brasileiro`)
+        } else{
+            console.log('você é Estrangeiro')
+        }
+
+        function calcular() {
+            var txtv = window.document.querySelector ('input#txtvel')
+            var res = windows.document.querySelector('div#res')
+            var vel = Text(txtv.value)
+            res.innerHTML = `<p>Você é ${vel}.`
+            if (vel == 'país') {
+                console.log += `você é brasileiro.`
+            }else {
+                console.log += `você é estrangeiro`
+            }
+            res.innerHTML += `Bem-Vindo!`
+        }
+    </script>
+    
+</body>
+</html>
