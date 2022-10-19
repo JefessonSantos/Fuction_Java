@@ -19,7 +19,7 @@
         var país ='Brasil'
         console.log(`Vivendo em ${país}`)
         if (país == 'Brasileiro') {
-            console.log(`Você é Brasileiro`)
+            console.log('Você é Brasileiro')
         } else{
             console.log('você é Estrangeiro')
         }
@@ -28,10 +28,10 @@
             var txtv = window.document.querySelector ('input#txtvel')
             var res = windows.document.querySelector('div#res')
             var vel = Text(txtv.value)
-            res.innerHTML = `<p>Você é ${vel}.`
+            res.innerHTML = `<p>Você é ${vel}.</P>`
             if (vel == 'país') {
                 console.log += `você é brasileiro.`
-            }else {
+            } else {
                 console.log += `você é estrangeiro`
             }
             res.innerHTML += `Bem-Vindo!`
